@@ -1,7 +1,9 @@
 import { combineReducers } from 'redux';
 
+import MetarReducer from './reducer_metar';
+
 const rootReducer = combineReducers({
-  state: (state = {}) => state
+  metar: MetarReducer
 });
 
 export default rootReducer;
